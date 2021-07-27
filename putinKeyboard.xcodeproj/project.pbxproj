@@ -13,7 +13,34 @@
 		FC406A4426B06EED0091D904 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC406A4226B06EED0091D904 /* Main.storyboard */; };
 		FC406A4626B06EF20091D904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC406A4526B06EF20091D904 /* Assets.xcassets */; };
 		FC406A4926B06EF20091D904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC406A4726B06EF20091D904 /* LaunchScreen.storyboard */; };
+		FC406A5826B06F0F0091D904 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC406A5726B06F0F0091D904 /* KeyboardViewController.swift */; };
+		FC406A5C26B06F0F0091D904 /* putin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC406A5526B06F0F0091D904 /* putin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC406A6426B0708A0091D904 /* putin.png in Resources */ = {isa = PBXBuildFile; fileRef = FC406A6326B0708A0091D904 /* putin.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC406A5A26B06F0F0091D904 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC406A3126B06EED0091D904 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC406A5426B06F0F0091D904;
+			remoteInfo = putin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC406A6026B06F0F0091D904 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC406A5C26B06F0F0091D904 /* putin.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC406A3926B06EED0091D904 /* putinKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = putinKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +51,21 @@
 		FC406A4526B06EF20091D904 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC406A4826B06EF20091D904 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC406A4A26B06EF20091D904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC406A5526B06F0F0091D904 /* putin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = putin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC406A5726B06F0F0091D904 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		FC406A5926B06F0F0091D904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC406A6326B0708A0091D904 /* putin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = putin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC406A3626B06EED0091D904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC406A5226B06F0F0091D904 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FC406A3B26B06EED0091D904 /* putinKeyboard */,
+				FC406A5626B06F0F0091D904 /* putin */,
 				FC406A3A26B06EED0091D904 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FC406A3926B06EED0091D904 /* putinKeyboard.app */,
+				FC406A5526B06F0F0091D904 /* putin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +107,16 @@
 			path = putinKeyboard;
 			sourceTree = "<group>";
 		};
+		FC406A5626B06F0F0091D904 /* putin */ = {
+			isa = PBXGroup;
+			children = (
+				FC406A6326B0708A0091D904 /* putin.png */,
+				FC406A5726B06F0F0091D904 /* KeyboardViewController.swift */,
+				FC406A5926B06F0F0091D904 /* Info.plist */,
+			);
+			path = putin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +127,34 @@
 				FC406A3526B06EED0091D904 /* Sources */,
 				FC406A3626B06EED0091D904 /* Frameworks */,
 				FC406A3726B06EED0091D904 /* Resources */,
+				FC406A6026B06F0F0091D904 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC406A5B26B06F0F0091D904 /* PBXTargetDependency */,
 			);
 			name = putinKeyboard;
 			productName = putinKeyboard;
 			productReference = FC406A3926B06EED0091D904 /* putinKeyboard.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC406A5426B06F0F0091D904 /* putin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC406A5D26B06F0F0091D904 /* Build configuration list for PBXNativeTarget "putin" */;
+			buildPhases = (
+				FC406A5126B06F0F0091D904 /* Sources */,
+				FC406A5226B06F0F0091D904 /* Frameworks */,
+				FC406A5326B06F0F0091D904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = putin;
+			productName = putin;
+			productReference = FC406A5526B06F0F0091D904 /* putin.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +166,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					FC406A3826B06EED0091D904 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FC406A5426B06F0F0091D904 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -115,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				FC406A3826B06EED0091D904 /* putinKeyboard */,
+				FC406A5426B06F0F0091D904 /* putin */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +200,14 @@
 				FC406A4926B06EF20091D904 /* LaunchScreen.storyboard in Resources */,
 				FC406A4626B06EF20091D904 /* Assets.xcassets in Resources */,
 				FC406A4426B06EED0091D904 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC406A5326B06F0F0091D904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC406A6426B0708A0091D904 /* putin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +224,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC406A5126B06F0F0091D904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC406A5826B06F0F0091D904 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC406A5B26B06F0F0091D904 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC406A5426B06F0F0091D904 /* putin */;
+			targetProxy = FC406A5A26B06F0F0091D904 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC406A4226B06EED0091D904 /* Main.storyboard */ = {
@@ -284,6 +381,7 @@
 		FC406A4E26B06EF20091D904 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +400,7 @@
 		FC406A4F26B06EF20091D904 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +411,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = herbin.putinKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC406A5E26B06F0F0091D904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = putin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herbin.putinKeyboard.putin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC406A5F26B06F0F0091D904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = putin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = herbin.putinKeyboard.putin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,6 +469,15 @@
 			buildConfigurations = (
 				FC406A4E26B06EF20091D904 /* Debug */,
 				FC406A4F26B06EF20091D904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC406A5D26B06F0F0091D904 /* Build configuration list for PBXNativeTarget "putin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC406A5E26B06F0F0091D904 /* Debug */,
+				FC406A5F26B06F0F0091D904 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
